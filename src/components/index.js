@@ -1,5 +1,4 @@
-import Footer from './Footer.jsx'
+// import Footer from './footerComponent.jsx'
 import Navbar from './Navbar.jsx'
-import Toast from './Toast.jsx'
 
-export {Footer, Navbar, Toast}
+export {Navbar}

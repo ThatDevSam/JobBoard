@@ -89,7 +89,7 @@ const Login = () => {
     })
   }
     return (
-      <form style={{background: theme.palette.violet.light, minHeight: '100vh', display: 'flex', justifyContent: 'center', alignContent: 'center'}}>     
+      <form style={{background: theme.palette.green.light, minHeight: '100vh', display: 'flex', justifyContent: 'center', alignContent: 'center'}}>     
         <Container maxWidth='sm'  sx={{display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
           <Box sx={{ flexGrow: 1, mt: 9, display: 'flex', justifyContent: 'center', alignContent: 'center', bgcolor: 'white', borderRadius: '15px', padding: 5, mb: 9}}>
             <Grid container rowSpacing={2} columnSpacing={2} sx={{display: 'flex', justifyContent: 'center', alignContent: 'center', }}>
@@ -101,7 +101,7 @@ const Login = () => {
               </Grid>
               {/* Login/register heading */}
               <Grid item xs={12} sx={{display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
-                <Typography variant="h5" sx={{color: theme.palette.violet.main, fontWeight: 'bold'}}>
+                <Typography variant="h5" sx={{color: theme.palette.green.main, fontWeight: 'bold'}}>
                   Login
                 </Typography>
                 
@@ -109,7 +109,7 @@ const Login = () => {
 
               <Grid item xs={12} sx={{display: 'flex', justifyContent: 'center', alignContent: 'center', marginBottom: 1}}>
                 <Typography variant="body2" sx={{fontWeight: 'bold'}}>
-                    Don't have an account? <Link to={'/register'} style={{color: theme.palette.violet.main}}>Sign up today!</Link>
+                    Don't have an account? <Link to={'/register'} style={{color: theme.palette.green.main}}>Sign up today!</Link>
                 </Typography>
               </Grid>
               
@@ -166,7 +166,7 @@ const Login = () => {
                     variant="contained" 
                     size={"large"} 
                     aria-label="Submit" 
-                    sx={{marginRight: 3, fontSize: 19, fontWeight: 'bold', bgcolor: theme.palette.violet.main, marginTop: 3, ":hover":{bgcolor: "white", color: theme.palette.violet.main,borderColor: 'inherit', border: 'solid'}}}
+                    sx={{marginRight: 3, fontSize: 19, fontWeight: 'bold', bgcolor: theme.palette.green.main, marginTop: 3, ":hover":{bgcolor: "white", color: theme.palette.green.main,borderColor: 'inherit', border: 'solid'}}}
                   >
                     Register
                   </Button>
@@ -175,7 +175,7 @@ const Login = () => {
                     onClick={handleClear} 
                     variant="outlined" 
                     aria-label="clear" 
-                    sx={{ color: 'grey', borderColor: "grey", fontWeight: 'bold', marginTop: 3, ":hover":{bgcolor: "white", color: theme.palette.violet.main,borderColor: 'inherit', border: 'solid'}}}
+                    sx={{ color: 'grey', borderColor: "grey", fontWeight: 'bold', marginTop: 3, ":hover":{bgcolor: "white", color: theme.palette.green.main, borderColor: 'inherit', border: 'solid'}}}
                   >
                     <Typography>Clear</Typography> 
                   </Button>                  

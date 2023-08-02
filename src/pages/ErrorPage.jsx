@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import notFoundImg from '../assets/images/not-found.svg';
+
 import{
     Typography,
     Box, 

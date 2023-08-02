@@ -2,23 +2,24 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material'
 import { Provider } from 'react-redux'
 import store from './reduxStore/store';
-
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 import { 
   Error, 
   Landing, 
   Register, 
   Dashboard,
   SharedLayout, 
-  Login
+  Login,
+  ProtectedRoute
 } from './pages';
 
 function App() {
 
   let jobBoardTheme = createTheme({
     palette:{
-      violet:{
+      green:{
         light: '#a5d6a7',
         main: '#4caf50'
       }
@@ -35,11 +36,17 @@ function App() {
       <Provider store={store}> 
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<SharedLayout/>}/>
-            <Route index element={<Landing/>}/>
-            <Route path='/register' element={<Register/>}/>
-            <Route path='/Login' element={<Login/>}/>
-            <Route path='/dashboard' element={<Dashboard/>}/>
+            <Route
+              path='/'
+              element={
+                  <SharedLayout />
+              }
+            >
+              <Route path='/dashboard' element={<Dashboard/>}/>
+          </Route>
+          <Route path='landing' element={<Landing/>}/>
+          <Route path='/register' element={<Register/>}/>
+          <Route path='/Login' element={<Login/>}/>
             {/* Catch all path for the error page. */}
             <Route path='*' element={<Error/>}/>
           </Routes>

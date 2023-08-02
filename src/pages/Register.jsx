@@ -122,7 +122,7 @@ const Register = () => {
     })
   }
     return (
-      <form style={{background: theme.palette.violet.light}}>     
+      <form style={{background: theme.palette.green.light}}>     
         <Container  sx={{maxWidth: {xs: 'xs', sm: 'md'}, display: 'flex', justifyContent: 'center', alignContent: 'center', }}>
           <Box sx={{ flexGrow: 1, mt: 5, display: 'flex', justifyContent: 'center', alignContent: 'center', bgcolor: 'white', borderRadius: '15px', padding: 5, mb: 5}}>
             <Grid container rowSpacing={2} columnSpacing={2} sx={{display: 'flex', justifyContent: 'center', alignContent: 'center', }}>
@@ -134,7 +134,7 @@ const Register = () => {
               </Grid>
               {/* Login/register heading */}
               <Grid item xs={12} sx={{display: 'flex', justifyContent: 'center', alignContent: 'center', marginBottom: 3}}>
-                <Typography variant="h5" sx={{color: theme.palette.violet.main, fontWeight: 'bold'}}>
+                <Typography variant="h5" sx={{color: theme.palette.green.main, fontWeight: 'bold'}}>
                   Register
                 </Typography>
               </Grid>
@@ -346,7 +346,7 @@ const Register = () => {
                     variant="contained" 
                     size={"large"} 
                     aria-label="Submit" 
-                    sx={{marginRight: 3, fontSize: 19, fontWeight: 'bold', bgcolor: theme.palette.violet.main, marginTop: 3, ":hover":{bgcolor: "white", color: theme.palette.violet.main,borderColor: 'inherit', border: 'solid'}}}
+                    sx={{marginRight: 3, fontSize: 19, fontWeight: 'bold', bgcolor: theme.palette.green.main, marginTop: 3, ":hover":{bgcolor: "white", color: theme.palette.violet.main,borderColor: 'inherit', border: 'solid'}}}
                   >
                     Register
                   </Button>
@@ -355,7 +355,7 @@ const Register = () => {
                     onClick={handleClear} 
                     variant="outlined" 
                     aria-label="clear" 
-                    sx={{ color: 'grey', borderColor: "grey", fontWeight: 'bold', marginTop: 3, ":hover":{bgcolor: "white", color: theme.palette.violet.main,borderColor: 'inherit', border: 'solid'}}}
+                    sx={{ color: 'grey', borderColor: "grey", fontWeight: 'bold', marginTop: 3, ":hover":{bgcolor: "white", color: theme.palette.green.main,borderColor: 'inherit', border: 'solid'}}}
                   >
                     <Typography>Clear</Typography> 
                   </Button>                  
